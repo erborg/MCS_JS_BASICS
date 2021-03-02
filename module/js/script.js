@@ -1,11 +1,3 @@
 answer = parseFloat(prompt("Number?"));
 
-if (answer > 0) {
-	console.log(answer);
-}
-else if (answer < 0) {
-	console.log(Math.abs(answer));
-}
-else {
-	console.log(0)
-}
+(answer > 0) ? console.log(answer) : console.log(Math.abs(answer));
