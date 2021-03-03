@@ -8,11 +8,11 @@ let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
 let computer = Math.floor(Math.random() * 3);
 
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
-if (player == computer) {
+if (player === computer) {
 	console.log("tie")
 }
 
-else if (player == 0 && computer == 1 || player == 1 && computer == 2 || player == 2 && computer == 0) {
+else if (player === 0 && computer === 1 || player === 1 && computer === 2 || player === 2 && computer === 0) {
 	console.log("player win")
 }
 
