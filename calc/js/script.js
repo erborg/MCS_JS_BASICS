@@ -1,9 +1,6 @@
-let haveEnough = (totalCash, watchesCount, earringsCount, watchesSum, earringsSum) => {
-	totalCash = parseInt(prompt('Total Cash'));
-	watchesCount = parseInt(prompt('Watches Count'));
-	watchesSum = parseInt(prompt('Watches Cost')) * watchesCount;
-	earringsCount = parseInt(prompt('Earrings Count'));
-	earringsSum = parseInt(prompt('Earrings Cost')) * earringsCount;
+let haveEnough = (totalCash, watchesCount, watchesCost, earringsCount, earringsCost) => {
+	watchesSum = watchesCount * watchesCost;
+	earringsSum = earringsCount * earringsCost;
 	totalSum = watchesSum + earringsSum;
 	if (totalCash >= totalSum) {
 		document.write("Enough $$$");
@@ -12,5 +9,3 @@ let haveEnough = (totalCash, watchesCount, earringsCount, watchesSum, earringsSu
 		document.write("Not enough $$$");
 	}
 }
-
-haveEnough();
