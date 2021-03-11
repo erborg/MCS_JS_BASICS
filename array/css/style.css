@@ -1,0 +1,16 @@
+@import url(reset.css);
+
+div {
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.coin {
+	margin-left: 15px;
+	margin-top: 30px;
+}
+
+.stripe {
+	width: 100px;
+	height: 30px;
+}
