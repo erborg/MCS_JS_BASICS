@@ -3,7 +3,7 @@ const city = 'Moscow'
 
 let xhr = new XMLHttpRequest()
 let request = function() {
-	let url = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+APIKey
+	let url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+APIKey
 	xhr.open('GET', url, false)
 	xhr.send()
 	let DATA = JSON.parse(xhr.responseText).main.temp - 273;
