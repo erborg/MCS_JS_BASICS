@@ -33,7 +33,7 @@ class Person {
 	}
 }
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
 	const form = document.forms[0];
 	const insertName = document.querySelector('.personName');
 	const insertIcon = document.querySelector('.icon');
